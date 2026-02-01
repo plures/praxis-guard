@@ -25,7 +25,7 @@ export interface BehaviorChangeResult {
  */
 export async function detectBehaviorChange(
   files: FileChange[],
-  context: CheckContext
+  _context: CheckContext
 ): Promise<BehaviorChangeResult> {
   const affectedFiles: string[] = [];
 

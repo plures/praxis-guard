@@ -17,7 +17,7 @@ interface FileChange {
  */
 export async function detectInvariantViolation(
   files: FileChange[],
-  context: CheckContext
+  _context: CheckContext
 ): Promise<RuleViolation[]> {
   const violations: RuleViolation[] = [];
 
