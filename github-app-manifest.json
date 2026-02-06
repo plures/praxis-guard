@@ -1,0 +1,20 @@
+{
+  "name": "Praxis Guard",
+  "url": "https://github.com/plures/praxis-guard",
+  "hook_attributes": {
+    "url": "https://smee.io/YOUR_SMEE_CHANNEL"
+  },
+  "redirect_url": "http://localhost:3000",
+  "description": "Deterministic traceability and decision governance for GitHub repositories",
+  "public": false,
+  "default_permissions": {
+    "checks": "write",
+    "contents": "read",
+    "pull_requests": "read"
+  },
+  "default_events": [
+    "pull_request",
+    "pull_request_review",
+    "check_suite"
+  ]
+}
