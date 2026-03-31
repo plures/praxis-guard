@@ -53,10 +53,12 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
             const prNum = ${{ github.event.pull_request.number }};
-            const prTitle = `${{ steps.context.outputs.pr_title }}`;
+            const prTitle = process.env.PR_TITLE || '';
 
             const changedFiles = fs.readFileSync('/tmp/changed_files.txt', 'utf8').trim();
             const codeDiff = fs.readFileSync('/tmp/code_diff.txt', 'utf8').trim();
+        env:
+          PR_TITLE: ${{ steps.context.outputs.pr_title }}
 
             // Dedup
             const existing = await github.rest.issues.listForRepo({
