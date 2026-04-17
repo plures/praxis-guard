@@ -1,3 +1,11 @@
+## [0.1.6] — 2026-04-17
+
+- fix(lifecycle): label-based retry counter + CI fix priority (4538630)
+- ci: inline lifecycle workflow — fix schedule failures (f0e93dc)
+- chore: centralize CI to org-wide reusable workflow (c13dbe5)
+- ci: standardize Node version to lts/* — remove hardcoded versions (8804de6)
+- ci: centralize lifecycle — event-driven with schedule guard (d687cfb)
+
 ## [0.1.5] — 2026-04-01
 
 - fix(lifecycle): v9.2 — process all PRs per tick (return→continue), widen bot filter (b376c44)
