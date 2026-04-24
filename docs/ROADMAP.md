@@ -1,40 +1,28 @@
 # Praxis Guard Roadmap
 
-This repo hosts the **Praxis Guard** GitHub App: deterministic traceability + decision governance.
+## Role in OASIS
+Praxis Guard enforces decision governance and traceability so OASIS evolves with provable, auditable rules. It is the policy gate that ensures privacy, safety, and economic constraints are encoded and enforced across the stack.
 
-## Phase 1 (Foundation): Traceability & Decision Governance
-**Goal:** Ship a credible, GitHub-native product that enforces traceability, contracts, and decision history across repositories.
+## Current State
+The GitHub App is early-stage with deterministic PR checks, repo-local ledger conventions (`/praxis-ledger`), and traceability doc generation planned. Core enforcement rules are defined but not yet broadly deployed.
 
-### Scope (keep minimal)
-- Read/write PR checks
-- Read repo contents
-- Read issues/PR descriptions
-- Write comments/annotations
+## Phases & Milestones
 
-### Core capabilities (v1)
-- Detect decision-bearing artifacts
-- Require/validate contracts
-- Maintain immutable decision ledger (repo-local `/praxis-ledger`)
-- Enforce PR policies
-- Generate traceability docs (Markdown/Mermaid)
+### Phase 1 — MVP Governance (Now → 30 days)
+- Ship a working GitHub App install flow with minimal permissions.
+- Deterministic PR checks for decision-bearing changes.
+- Require contract/ledger entries before merge on target repos.
+- Generate traceability docs (Markdown/Mermaid) on each decision change.
 
-### Deterministic enforcement rules (examples)
-- Rule/logic added without contract → PR warning
-- Contract exists, missing tests/spec → PR warning
-- Behavior changed, no new ledger entry → PR failure
-- Invariant violated → PR failure
-- Assumptions invalidated → PR comment
+### Phase 2 — OASIS-Wide Enforcement (30 → 90 days)
+- Expand enforcement to PluresDB, praxis, pares-agens, and OASIS.
+- Add invariant checks for privacy/security constraints.
+- Standardize rule packs and violation severity across repos.
+- Provide audit exports for release artifacts.
 
-### Definition of Done
-- Repo installs the app
-- PR introduces a rule/policy
-- App blocks merge until:
-  - contract exists
-  - ledger entry created
-  - docs auto-generate traceability
+### Phase 3 — Release Governance & Audit (90 → 180 days)
+- Gate OASIS releases on verified decision coverage.
+- Integrate with QA evidence (cross-link failures to decisions).
+- Automated compliance reports for external stakeholders.
 
-## Phase 2 (Monetization): Decision governance for AI-assisted workflows
-Narrow to one use case first (recommended: Copilot PR governance).
-
-## Stop-loss
-If after 3–5 serious conversations nobody pays: pause; do not overbuild.
+*Last updated: 2026-04-24*
