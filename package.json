@@ -1,6 +1,6 @@
 {
   "name": "praxis-guard",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "GitHub App for traceability & decision governance",
   "main": "dist/index.js",
   "scripts": {

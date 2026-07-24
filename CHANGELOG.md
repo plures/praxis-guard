@@ -1,3 +1,11 @@
+## [0.4.2] — 2026-07-24
+
+- ci(release): trigger release on merge to main (#12) (a8d1026)
+- ci: migrate Tech Doc Writer to shared reusable (7d8042a)
+- fix(ci): repair tech-doc-writer YAML (relocate misplaced env: + body indent) (1dde896)
+- ci: add security-aware Dependabot auto-merge workflow (org backfill) (ec40978)
+- ci: change release trigger from push-to-main to tag-only (175fb45)
+
 ## [0.4.1] — 2026-05-11
 
 - refactor: replace inline lifecycle with reusable workflow call (fcc2e33)
